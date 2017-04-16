@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             if (sensorType == Sensor.TYPE_ACCELEROMETER) {
                 final int value = 15;//摇一摇阀值,不同手机能达到的最大值不同,如某品牌手机只能达到20
                 if (x >= value || x <= -value || y >= value || y <= -value || z >= value || z <= -value) {
-                    yao.setText("你已经摇了");
+                    yao.setText("你已经摇了，你已经做出了这个操作");
                 }
             }
         }
